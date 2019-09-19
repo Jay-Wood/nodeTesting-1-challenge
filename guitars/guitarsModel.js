@@ -9,7 +9,7 @@ module.exports = {
 }
 
 async function insert(guitar) {
-    return db("guitars").insert(guitars, "id")
+    return db("guitars").insert(guitar, "id")
 }
 
 async function update(id, changes) {
