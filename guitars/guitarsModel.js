@@ -17,7 +17,9 @@ return null;
 }
 
 function remove(id) {
-return null;
+    return db("guitars")
+        .where({id})
+        .del();
 }
 
 function getAll() {
